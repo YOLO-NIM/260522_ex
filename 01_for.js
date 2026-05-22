@@ -62,3 +62,16 @@ for (let i = 0; i < 3; i++) {
     console.log(`i ${i} j ${j}`);
   }
 }
+
+// 표 형태의 데이터를 탐색할 때 (행-열)
+const matrix = [
+  [1, "윌리엄", "바나나를 좋아함"],
+  [2, "김자바", "김을 좋아함"],
+  [3, "박자스", "undefined를 좋아함"],
+];
+for (let i = 0; i < matrix.length; i++) {
+  console.log(matrix[i]);
+  for (let j = 0; j < matrix[0].length; j++) {
+    console.log(matrix[i][j]);
+  }
+}

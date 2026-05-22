@@ -21,3 +21,23 @@ function a() {
 }
 
 // 화살표 함수 (유사 lambda)
+// 하스켈, 리스프 - (스칼라...) - 클로저 - ocaml
+(function () {});
+// (입력) => 출력
+// (입력) => {과정 return 출력}
+
+const af = () => 0; // << 핵심
+
+af();
+console.log(af());
+const af2 = (a) => console.log(`실행 결과 : ${a}`);
+console.log(af2(1));
+// a=> console.log(`실행 결과 : ${a}`);
+// 매개변수가 1개 있을 때는 괄호 생략 가능
+const af3 = (a) => {
+  // 블록을 넣어서 최종적으로 과정을 거쳐 return
+  a++;
+  a *= 2;
+  return a;
+};
+console.log(af3(100));

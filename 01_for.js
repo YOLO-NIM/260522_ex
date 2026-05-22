@@ -36,4 +36,29 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 // 역방향
+console.log("==역방향==");
+for (let i = arr.length; i > 0; i--) {
+  console.log(arr[i - 1]);
+}
+
+// while 문으로 구현한다면
+let w2 = arr.length - 1;
+while (w2 >= 0) {
+  console.log(arr[w2]);
+  w2--;
+}
+
+// 무한 반복
+// for (;;) {
+//   // for의 무한 반복
+//   console.log("크크크킄");
+// }
+
 // 중첨 for문
+// 중첩은 몇번까지? : 2번 => bigO -> O^2 / O*logO
+// if, switch, while, for 모두 겹칠 수 있음
+for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    console.log(`i ${i} j ${j}`);
+  }
+}
